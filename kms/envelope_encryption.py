@@ -68,7 +68,7 @@ encrypted_data: bytes = encrypt(data_key)
 
 ## 3. Store encrypted data key
 with open(encrypted_data_key_path, "w") as fp:
-    fp.write(urlsafe_b64encode(encrypted_data_key).decode())
+    fp.write(urlsafe_b64encode(encrypted_data_key).decode(encoding='utf-8'))
 
 ## 4. Delete data key
 del data_key
