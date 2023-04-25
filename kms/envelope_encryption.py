@@ -96,3 +96,4 @@ response = Response(
 )
 
 print((asdict(response)))
+# -> {'plaintext': 'enokawa', 'decrypted_text': 'enokawa'}
