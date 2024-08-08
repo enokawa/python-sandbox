@@ -12,4 +12,4 @@ RUN python -m pip install -r requirements.txt
 
 COPY *.py ./
 
-CMD ["exec", "uvicorn", "--port=$PORT", "main:app"]
+CMD exec uvicorn --port=$PORT main:app
