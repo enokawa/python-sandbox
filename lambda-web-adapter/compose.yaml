@@ -3,6 +3,8 @@ services:
     build: src
     environment:
       PORT: "8000"
+    volumes:
+      - ./src:/var/task
     ports:
       - "8000:8000"
     command: uvicorn --port=8000 --host=0.0.0.0 main:app --reload
