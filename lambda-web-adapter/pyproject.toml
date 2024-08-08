@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lambda-web-adapter"
+version = "0.1.0"
+description = ""
+authors = ["enokawa <enokawa00@gmail.com>"]
+readme = "README.md"
+packages = [{include = "lambda_web_adapter"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.112.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
